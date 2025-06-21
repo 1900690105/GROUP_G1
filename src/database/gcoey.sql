@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2025 at 05:23 PM
+-- Generation Time: Jun 21, 2025 at 08:43 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,9 +40,9 @@ CREATE TABLE `administration` (
 --
 
 INSERT INTO `administration` (`administration_id`, `administration_name`, `administration_post`, `administration_department`, `administration_image`) VALUES
-(1, 'Shri V C Rastogi', 'Principal Secretary', 'Higher & Technical Education', '/teachers/sir1.png'),
-(2, 'Dr Vinod Mohitkar', 'Director', 'Technical Education', '/teachers/sir2.png'),
-(3, 'Prof. V.B. Waghmare', 'Principal', 'Govt. College of Engg., Yavatmal', '/teachers/sir3.png');
+(1, 'Shri V C Rastogi', 'Principal Secretary', 'Higher & Technical Education', '1OOKTSSpT_4_Quvfn_wEgb6ERYQXNZDvK'),
+(2, 'Dr Vinod Mohitkar', 'Director', 'Technical Education', '1wNP0y-mfi1s0V-VWF_lykuiCyOUK4lYO'),
+(3, 'Prof. V.B. Waghmare', 'Principal', 'Govt. College of Engg., Yavatmal', '1iTvEiNrcTl8gqgI6EMrSM7kQD_yZRcmy');
 
 -- --------------------------------------------------------
 
@@ -111,9 +111,9 @@ CREATE TABLE `alumni` (
 
 INSERT INTO `alumni` (`aid`, `aname`, `linkedin_url`, `adept`, `abatch`, `apost`, `company`, `package`, `aphone`, `aaddress`, `message`, `image`, `status`) VALUES
 ('2210121245502', 'nikhil k', 'sadf', 'CSE', 0, 'Web developer', 'google', 3, 91112432001, 'nanded', 'werf', 'https://drive.google.com/uc?id=1M-fJ9BO1ir1acgx1Cr3lEtQE5q8Pi0So', 'Active'),
-('22101212845502', 'Saraswati Adkine', 'sadf', 'EE', 0, 'Electrical Helper', 'Relience', 7, 99999999999, 'efw', 'werf', 'https://drive.google.com/uc?id=1mKvo1Jf-P5HmBP9xo4dqcdPYkbK-SiPl', 'Active'),
-('28801212845502', 'Pooja Kale', 'sadf', 'CSE', 0, 'Hardware Engineer', 'TCS', 8, 8888240411, 'efw', 'werf', 'https://drive.google.com/uc?id=1nx6GtGHLYR9ljic4EZqAC-s2UxWt352X', 'Active'),
-('44801212845502', 'Jyoti Kokare', 'sadf', 'CSE', 0, 'Frontend Engineering', 'ABC Corporation', 7, 9988240411, 'latur', 'werf', 'https://drive.google.com/uc?id=1nx6GtGHLYR9ljic4EZqAC-s2UxWt352X', 'Active');
+('22101212845502', 'Saraswati Adkine', 'sadf', 'EE', 0, 'Electrical Helper', 'Relience', 7, 99999999999, 'efw', 'werf', 'https://drive.google.com/uc?id=1Zwkrb5ovbOGTAA_NSn_8LZIiok7wtGr7', 'Active'),
+('28801212845502', 'Pooja Kale', 'sadf', 'CSE', 0, 'Hardware Engineer', 'TCS', 8, 8888240411, 'efw', 'werf', 'https://drive.google.com/uc?id=1i_6GouPti4nNct3Uqs3QDKrnMR6lUH0j', 'Active'),
+('44801212845502', 'Jyoti Kokare', 'sadf', 'CSE', 0, 'Frontend Engineering', 'ABC Corporation', 7, 9988240411, 'latur', 'werf', 'https://drive.google.com/uc?id=1vBw3Rm7FTI4qUNUWaPNfyGMbgpEaF2-G', 'Active');
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,11 @@ CREATE TABLE `announcement` (
 --
 
 INSERT INTO `announcement` (`id`, `title`, `content`, `priority`, `targetAudience`, `status`, `createdAt`) VALUES
-(1, 'hello', 'fghdfghf', 'low', 'students', 'active', '2025-06-07');
+(1, 'System Maintenance', 'The system will be down for maintenance from 10 PM to 2 AM.', 'high', '', 'active', '2025-06-21'),
+(2, 'New Feature Release', 'We are launching a new dashboard feature this week.', 'medium', '', 'active', '2025-06-20'),
+(3, 'Holiday Notification', 'Our office will remain closed on July 4th for Independence Day.', 'low', '', '', '2025-06-19'),
+(4, 'Security Update', 'A critical security update has been applied.', 'high', '', 'active', '2025-06-18'),
+(5, 'Survey Participation', 'Please fill out the feedback survey by end of this week.', 'medium', '', 'active', '2025-06-17');
 
 -- --------------------------------------------------------
 
@@ -385,7 +389,6 @@ CREATE TABLE `gallary` (
 --
 
 INSERT INTO `gallary` (`id`, `url`, `title`, `category`, `upload_date`) VALUES
-(35, 'https://drive.google.com/uc?id=19ACPc-A5m7nQgJamz2fC9qbqSB30dnHY', 'crush 1.0', 'events', '2025-06-05 18:30:00'),
 (36, 'https://drive.google.com/uc?id=1bxNHbiDoDoZPL0L6_XMobTSfqNAWuM78', 'crush 1.0', 'events', '2025-06-05 18:30:00'),
 (37, 'https://drive.google.com/uc?id=1eRO_5Ofam_g5P0VJqdqmftLo_Gvwljt_', 'crush 1.0 winner', 'events', '2025-06-05 18:30:00'),
 (38, 'https://drive.google.com/uc?id=1_NcBFy9md5bi0kmBZM_FFcfT4CsSpma0', 'crush 1.0 1st runner up', 'events', '2025-06-05 18:30:00');
@@ -442,7 +445,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `excerpt`, `content`, `category`, `author`, `publish_date`, `status`, `featured`, `views`, `image_url`, `tags`, `created_at`, `updated_at`) VALUES
-(11, 'crush', 'c programming event', 'c programming event', 'events', 'nk', '2025-06-07', 'published', 1, 0, 'https://drive.google.com/uc?id=1lYXJ2VBzEIjHIbZdPnsjnLMfl3yd4j7p', '[]', '2025-06-07 04:36:11', '2025-06-07 04:45:11');
+(11, 'crush 3.0', 'c programming event', 'c programming event', 'events', 'nk', '2025-06-07', 'published', 1, 0, 'https://drive.google.com/uc?id=1lYXJ2VBzEIjHIbZdPnsjnLMfl3yd4j7p', '[]', '2025-06-07 04:36:11', '2025-06-16 17:28:49');
 
 -- --------------------------------------------------------
 
@@ -584,42 +587,56 @@ INSERT INTO `sendmail` (`id`, `mto`, `subject`, `massage`, `date`) VALUES
 --
 
 CREATE TABLE `student` (
-  `prn` varchar(20) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `father` varchar(30) NOT NULL,
-  `surname` varchar(30) NOT NULL,
-  `mother` varchar(30) NOT NULL,
-  `dob` date NOT NULL,
-  `gender` varchar(30) NOT NULL,
-  `phone` decimal(10,0) DEFAULT NULL,
-  `pphone` decimal(10,0) DEFAULT NULL,
-  `email` varchar(50) NOT NULL,
-  `religion` varchar(30) NOT NULL,
-  `category` varchar(30) NOT NULL,
-  `caste` varchar(30) NOT NULL,
-  `city` varchar(30) NOT NULL,
-  `state` varchar(30) NOT NULL,
-  `address` varchar(100) NOT NULL,
-  `pincode` decimal(10,0) NOT NULL,
-  `dept` varchar(30) NOT NULL,
-  `class` varchar(30) NOT NULL,
-  `cgpa` float NOT NULL,
-  `rollno` decimal(10,0) NOT NULL,
-  `image` varchar(400) NOT NULL,
-  `marksheet` varchar(400) NOT NULL,
-  `stetus` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `date_of_birth` date NOT NULL,
+  `gender` enum('male','female','other') DEFAULT NULL,
+  `blood_group` varchar(5) DEFAULT NULL,
+  `nationality` varchar(100) DEFAULT NULL,
+  `religion` varchar(100) DEFAULT NULL,
+  `category` enum('general','obc','sc','st') DEFAULT NULL,
+  `permanent_street` text DEFAULT NULL,
+  `permanent_city` varchar(100) DEFAULT NULL,
+  `permanent_state` varchar(100) DEFAULT NULL,
+  `permanent_pincode` varchar(10) DEFAULT NULL,
+  `permanent_country` varchar(100) DEFAULT 'India',
+  `current_street` text DEFAULT NULL,
+  `current_city` varchar(100) DEFAULT NULL,
+  `current_state` varchar(100) DEFAULT NULL,
+  `current_pincode` varchar(10) DEFAULT NULL,
+  `current_country` varchar(100) DEFAULT 'India',
+  `same_as_permanent` tinyint(1) DEFAULT 0,
+  `course` varchar(50) DEFAULT NULL,
+  `branch` varchar(100) DEFAULT NULL,
+  `semester` int(11) DEFAULT NULL,
+  `admission_year` year(4) DEFAULT NULL,
+  `previous_school_name` varchar(255) DEFAULT NULL,
+  `previous_board` varchar(100) DEFAULT NULL,
+  `previous_percentage` varchar(10) DEFAULT NULL,
+  `previous_passing_year` year(4) DEFAULT NULL,
+  `father_name` varchar(100) DEFAULT NULL,
+  `father_occupation` varchar(100) DEFAULT NULL,
+  `father_phone` varchar(20) DEFAULT NULL,
+  `mother_name` varchar(100) DEFAULT NULL,
+  `mother_occupation` varchar(100) DEFAULT NULL,
+  `mother_phone` varchar(20) DEFAULT NULL,
+  `guardian_name` varchar(100) DEFAULT NULL,
+  `guardian_relation` varchar(50) DEFAULT NULL,
+  `guardian_phone` varchar(20) DEFAULT NULL,
+  `photo_path` varchar(500) DEFAULT NULL,
+  `signature_path` varchar(500) DEFAULT NULL,
+  `tenth_certificate_path` varchar(500) DEFAULT NULL,
+  `twelfth_certificate_path` varchar(500) DEFAULT NULL,
+  `transfer_certificate_path` varchar(500) DEFAULT NULL,
+  `migration_certificate_path` varchar(500) DEFAULT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `status` enum('pending','approved','rejected') DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`prn`, `password`, `name`, `father`, `surname`, `mother`, `dob`, `gender`, `phone`, `pphone`, `email`, `religion`, `category`, `caste`, `city`, `state`, `address`, `pincode`, `dept`, `class`, `cgpa`, `rollno`, `image`, `marksheet`, `stetus`) VALUES
-('2110121245054', 'Aboli@123', 'Aboli', 'Vijay', 'Galat', 'varsha', '2003-04-30', 'FEMALE', 7709709523, 9422154885, 'aboligalat017@gmail.com', 'Hinduism', 'NTC', 'VJNT', 'nagpur', 'maharashtra', '18A shrihari nagar no 2 Omkar nagar nagpur 440027', 440027, 'CO', '4', 7.52, 53, '33bb665873d81cd9a4dc587d2051efb7.jpg', '', 1),
-('2210121245503', '123123', 'jyoti', 'maroti', 'kokare', 'ok', '2003-04-17', 'FEMALE', 9112430022, 789456123, 'graminpoly123@gmail.com', 'Hinduism', 'SC', 'SC', 'nanded', 'maharashtra', 'shakti nagar, itwara road', 441604, 'EXTC', '3', 6.66, 67, 'IMG20230914190018.jpg', '', 1),
-('2210121245504', 'N1234567', 'test', 'test', 'test', 'test', '2024-04-03', 'MALE', 9112430028, 8888240411, 'nikhilkandhare33@gmail.com', 'Hinduism', 'test', 'SC', 'nanded', 'Maharashtra', 'dhamangaoroad yavatmal', 445001, 'CO', '1', 6.68, 66, 'user_avatar.png', '', 1),
-('2210121245520', 'N1234567', 'Nikhil ', 'vitthal', 'kandhare', 'varsha', '2003-04-17', 'MALE', 9112430080, 8888240400, 'nikhilkahre22@email.com', 'Hinduism', 'matang', 'SC', 'nagpur', 'maharashtra', '18A shrihari nagar no 2 Omkar nagar nagpur 440027', 445500, 'CO', '4', 6.66, 66, 'pic8.jpg', '', 1);
 
 -- --------------------------------------------------------
 
@@ -682,9 +699,21 @@ CREATE TABLE `teacher` (
 --
 
 INSERT INTO `teacher` (`tid`, `teacher_id`, `tname`, `temail`, `tgender`, `tpassword`, `tqualification`, `tbio`, `tdept`, `tpost`, `tphone`, `texperience`, `taddress`, `tphoto`, `tlinkedin`, `status`) VALUES
+(24, '', '', '', '', '', '', '', '', '', 7, 0, '', '', '', 0),
+(20, 'CE01', 'Dr. Rampravesh K. Rai', 'rairampravesh@yahoo.co.in', 'male', 'Rai123', 'ME (Environ.), Ph.D', '', 'CE', 'HOD', 0, 30, '', '', '', 1),
+(23, 'CO01', 'Chetan Vikram Andhare', 'andhare.chetan@gcoey.ac.in', 'male', 'Chetan123', 'M.Tech', '', 'CSE', 'HOD', 9850645636, 12, '', '', '', 1),
+(26, 'CO02', 'sSmt. Prajkta Prakash Shelke', 'prajkta.prakash@gcoey.ac.in', 'female', 'Prajkta123', '', 'Area of Interest: Data base management system, Artificial intelligence, Data mining', 'CSE', 'Assistant Professor', 9518323988, 15, '', '', '', 1),
 (15, 'CO46', 'Shweta A. Junghare', 'shwetajunghare7@gmail.com', 'Female', 'Shweta1234', 'ME IN Computer Engineering', 'Specializes in Artificial Intelligence and Machine Learning with over 15 years of research experience. Published 50+ papers in top-tier conferences.', 'CSE', 'Teaching staff', 8975647701, 3, 'Gandhi Chowk Kalamb, Yavatmal, maharashtra', '1zf11sfssvDvE4OtGeg0r6Iq5yByTWsdvgTeETGz7', 'https://www.linkedin.com/404/', 1),
 (16, 'CO48', 'Vivek Rajendra Shelke', 'vivekshelke55@gmail.com', 'Female', 'Shweta1234', 'ME IN Computer Engineering', 'Specializes in Artificial Intelligence and Machine Learning with over 15 years of research experience. Published 50+ papers in top-tier conferences.', 'CSE', 'Teaching staff', 8975647788, 3, 'Gandhi Chowk Kalamb, Yavatmal, maharashtra', '1zf11DvE4OtGeg0r6Iq5yByTmWgTeETGz7', 'https://www.linkedin.com/404/', 1),
-(19, 'CO49', 'Rashmi Thakre', 'RashmiThakre58@gmail.com', 'Female', 'Rashmi Thakre1234', 'ME IN Computer Engineering', 'Specializes in Artificial Intelligence and Machine Learning with over 15 years of research experience. Published 50+ papers in top-tier conferences.', 'CSE', 'Teaching staff', 8988647788, 3, 'Gandhi Chowk Kalamb, Yavatmal, maharashtra', '1zf11DvE4OtGeg0r6Iq5yByTmWgTeETGz7', 'https://www.linkedin.com/404/', 1);
+(19, 'CO49', 'Rashmi Thakre', 'RashmiThakre58@gmail.com', 'Female', 'Rashmi Thakre1234', 'ME IN Computer Engineering', 'Specializes in Artificial Intelligence and Machine Learning with over 15 years of research experience. Published 50+ papers in top-tier conferences.', 'CSE', 'Teaching staff', 8988647788, 3, 'Gandhi Chowk Kalamb, Yavatmal, maharashtra', '1zf11DvE4OtGeg0r6Iq5yByTmWgTeETGz7', 'https://www.linkedin.com/404/', 1),
+(27, 'EE01', 'Prof. A. S. Sindekar', 'assindekar@gmail.com', 'male', 'Sinderkar123', 'M.Tech', '', 'Elecrtical Engineering', 'Assistant Professor', 9798755434, 35, '', '', '', 1),
+(28, 'EE02', 'Prof. P. S. Swami', 'psswami01@gmail.com', 'male', ' Swami123', 'ME ', '', 'EE', 'Assistant Professor', 9518323956, 32, '', '', '', 0),
+(29, 'EE03', 'Dr. K. D. Thakur', 'kawitadthakur@gmail.com', 'male', 'Thakur123', 'PhD', '', 'EE', 'Assistant Professor', 9518323963, 20, '', '', '', 0),
+(30, 'EX01', 'Prof. Samarat S. Thorat', 'thorat.samrat@gcoey.ac.in', 'male', 'Thorat123', 'M.E (DE)', '', 'EXTC', 'Astt. Professor I/C HOD', 9515723956, 16, '', '', '', 0),
+(31, 'EX02', 'Prof. Snehal S. Thorat', 'thorat.snehal@gcoey.ac.in', 'female', 'Sthorat123', 'M.E (DE)', '', 'EXTC', 'Assistant Professor', 9515723354, 14, '', '', '', 0),
+(32, 'EX03', 'Dr. Shaktikumar Ranjit Shiledar', 'shiledar.shaktikumar@gcoey.ac.in', '', '', '', '', 'EXTC', 'Assistant Professor', 9689414356, 10, '', '', '', 0),
+(33, 'ME01', 'Dr. Shrikant Dinkarrao Londhe', 'londhe.shrikant@gcoey.ac.in', 'male', 'Londhe123', '', '', 'ME', 'HOD & Principal ', 9515723742, 30, '', '', '', 0),
+(35, 'ME02', 'Monika Shankarrao Satpute', 'monika.gooey@gmail.com', 'female', 'Monika123', 'M.Tech Thermal Power Engineering', '', 'Mechanical  Engineering', 'Assistant Professor', 9518323954, 18, '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -851,9 +880,12 @@ ALTER TABLE `sendmail`
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
-  ADD PRIMARY KEY (`prn`),
+  ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `phone` (`phone`);
+  ADD KEY `idx_email` (`email`),
+  ADD KEY `idx_phone` (`phone`),
+  ADD KEY `idx_course_branch` (`course`,`branch`),
+  ADD KEY `idx_admission_year` (`admission_year`);
 
 --
 -- Indexes for table `tcapplication`
@@ -904,7 +936,7 @@ ALTER TABLE `adminlogin`
 -- AUTO_INCREMENT for table `announcement`
 --
 ALTER TABLE `announcement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `banner`
@@ -1009,6 +1041,12 @@ ALTER TABLE `sendmail`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
+-- AUTO_INCREMENT for table `student`
+--
+ALTER TABLE `student`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `tcapplication`
 --
 ALTER TABLE `tcapplication`
@@ -1018,7 +1056,7 @@ ALTER TABLE `tcapplication`
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `tid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `tid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `uploads`
